@@ -28,3 +28,13 @@ dotchart(itens)
 
 ## O mesmo gráfico com menos itens
 dotchart(itens[1:10], cex = 0.8)
+itemFrequencyPlot(groceries, topN=10)
+
+## Encontrando as regras de associação com o algoritmo Apriori
+regras <- apriori(groceries, parameter = list(support=0.001, confidence=0.7, minlen = 2))
+
+## Inspecionando as regras
+summary(regras)
+
+## Vendo as regras
+inspect(regras[1:3])
