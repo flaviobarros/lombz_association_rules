@@ -1,1 +1,3 @@
-# lombz_association_rules
+# Regras de Associação
+
+Códigos e slides da apresentação.
